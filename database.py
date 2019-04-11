@@ -1,9 +1,5 @@
-""" 
-Author: Aleksandra Sokolowska
-for Validity Labs AG
-"""
-
 from web3 import Web3
+from web3.auto import w3
 from organize import *
 import time
 
@@ -12,7 +8,7 @@ import time
 #web3 = Web3(Web3.HTTPProvider("https://mainnet.infura.io/your-personal-number"))
 
 # 2. or connection via local node 
-#web3 = Web3(Web3.IPCProvider('/your-path-to/geth.ipc'))
+web3 = Web3(Web3.IPCProvider('/home/wcc/eth/data/geth.ipc'))
 
 # load a block.
 Nblocks = 10000
